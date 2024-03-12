@@ -1,3 +1,6 @@
+nav a:hover{
+    color: rgb(255, 0, 187);
+}
 body {
     background-color: rgb(91, 100, 108);
 }
@@ -38,7 +41,7 @@ header{
     width: 140;
 }
 #a5{
-    background-color:rgb(49, 138, 255) ;
+    background-color:rgb(99, 135, 255) ;
     margin: 20px;
     margin-left: 60vmin;
     width: 140;
@@ -54,4 +57,14 @@ header{
     margin: 20px;
     margin-left: 90vmin;
     width: 140;
+}
+#imagem1{
+    display: flex;
+    justify-content: space-around; 
+
+
+}
+#imagem2{
+    display:  flex;
+    justify-content:center; 
 }
