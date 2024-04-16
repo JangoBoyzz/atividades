@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+    <H1>CALCULADORA</H1>
+    <hr>
+    <form action="#" method="post">
+        <div>
+                <label for="operacao"></label>
+                <select id="operacao">
+                    <option selected disabled >Escolha uma operação</option>
+                    <option value="Soma">Soma</option>
+                    <option value="Subtracao">Subtração</option>
+                    <option value="Multiplicacao">Multiplicação</option>
+                    <option value="Divisao">Divisão</option>
+                </select>
+        </div>
+        <div>
+                <label for="1stnumber">Primeiro Número</label>
+                <br>
+                <input type="number" id="1stnumber" name="1stnumber" required>
+        </div>
+        <div>
+                <label for="2stnumber">Segundo Número</label>
+                <br>
+                <input type="number" id="2stnumber" name="2stnumber"required>
+        </div>
+        <br>
+        <div>    
+            <button id="processa" type="button" onclick="salvardados()">Calcular</button>   
+    </div>
+        <p> Seu resultado é: <span id="mostraresultado"></span></p></p>
+        
+    </form>
+</body>
+</html>
