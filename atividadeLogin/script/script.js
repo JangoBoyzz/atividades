@@ -5,7 +5,7 @@ function salvardados(){
     let senhaC = '123';
 
     if ((nome === nomeC) && (senha === senhaC)){
-        window.location.href  = "outra.html"
+        window.location.href  = "outra.html";
     }else{
         alert ("O usuario ou senha está incorreta!");
     }
