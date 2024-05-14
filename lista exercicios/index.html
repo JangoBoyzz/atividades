@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+<div class="container">
+    <Div>
+        <h1>ATIVIDADE 01</h1>
+        <hr>
+        <label for="1stnumber">Primeiro Número</label>
+        <input type="number" id="1stnumber" name="1stnumber" required>
+    </Div>
+    <br>
+    <div>
+        <label for="2stnumber">Segundo Número</label>
+        <input type="number" id="2stnumber" name="2stnumber" required>
+    </div>
+    <br>
+    <div>
+        <label for="operacao"></label>
+        <select id="operacao">
+            <option selected disabled >Escolha uma opção</option>
+            <option value="mostra">Diferença dos Números</option>
+            <option value="dobro">Dobro do primeira + triplo do segundo número</option>
+            <option value="multiplicacao">Multiplicar os valores </option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <button id="processa" type="button" onclick="salvardados()">Enviar</button>   
+    </div>
+    <div>
+        <p> Seu resultado é: <span id="mostraresultado"></span></p></p><div class=""></div>
+        <p>Maior Número: <span id="maior"></span></p>
+        <p>Menor Número: <span id="menor"></span></p>
+    </div>
+</div>
+<div class="container">
+    <Div>
+        <h1>ATIVIDADE 02</h1>
+        <hr>
+        <label for="nome">Nome do Funcionário</label>
+        <input type="text" id="nome" name="nome" required>
+    </Div>
+    <br>
+    <div>
+        <label for="salario">Salário bruto</label>
+        <input type="number" id="salario" name="salario" required>
+    </div>
+    <br>
+    <div>
+        <button id="processa" type="button" onclick="salvardadosINSS()">Enviar</button>   
+    </div>
+    <div>
+        <p>Nome do Funcionário: <span id="nomef"></span></p>
+        <p>Salário bruto: <span id="bruto"></span></p>
+        <p>Valor do INSS: <span id="inss"></span></p>
+        <p>Salário líquido: <span id="mostraresultadoINSS"></span></p>
+    </div>
+</div>
+<div class="container">
+    <Div>
+        <h1>ATIVIDADE 03</h1>
+        <hr>
+        <h3>Digite seu salário para saber o desconto</h3>
+        <label for="salario2">Salário</label>
+        <input type="number" id="salario2" name="salario2" required>
+    </Div>
+    <br>
+    <div>
+        <button id="processa" type="button" onclick="salvardadosDESC()">Enviar</button>   
+    </div>
+    <div>
+        <p>Taxa de desconto: <span id="porc"></span></p>
+        <p>Valor de desconto: <span id="desconto"></span></p>
+        <p>Salário: <span id="bruto2"></span></p>
+        <p>Salário com desconto: <span id="vDesc"></span></p>
+    </div>
+</div>
+</div>
+</html>

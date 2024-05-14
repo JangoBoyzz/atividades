@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin-top:300px;
+    background-color: rgba(48, 48, 48, 0.274);
+}
+input[type="mostra"],
+  input[type="dobro"],
+  input[type="multiplicacao"],
+  input[type="1stnumber"], 
+  input[type="2stnumber"] {
+      width: calc(100% - 10px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+}
+h1{
+    text-align: center;
+}
+  .container{
+    max-width:4000px;
+    margin:50px auto;
+    padding:20px;
+    background-color:rgb(51, 28, 68);
+    border: none;
+    border-radius:3px;
+    cursor: pointer;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#processa {
+    width:100%;
+    padding:10px;
+    background-color:#007bff;
+    color:white;
+    border:none;
+    border-radius:3px;
+    cursor: pointer;
+}
+label {
+    display: block;
+    margin-bottom: 3px;
+}
