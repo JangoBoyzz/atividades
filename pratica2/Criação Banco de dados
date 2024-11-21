@@ -1,0 +1,28 @@
+CREATE DATABASE sistema_solicitacoes;
+CREATE TABLE clientes (
+    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(14) UNIQUE NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    telefone VARCHAR(15)
+) ENGINE=InnoDB;
+
+CREATE TABLE funcionarios (
+    id_funcionario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    cargo VARCHAR(50)
+) ENGINE=InnoDB;
+
+CREATE TABLE solicitacoes (
+    id_solicitacao INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT NOT NULL,
+    descricao TEXT NOT NULL,
+    urgencia ENUM('baixa', 'média', 'alta') DEFAULT 'baixa',
+    status ENUM('pendente', 'em andamento', 'finalizada') DEFAULT 'pendente',
+    data_abertura TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    id_funcionario INT,
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (id_funcionario) REFERENCES funcionarios(id_funcionario) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
